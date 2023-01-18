@@ -13,17 +13,38 @@ input, button, textarea, select { font: inherit }
 
 
 /* Desktops */
-@media (min-width: 768px) { body { padding: 4% 20% } }
+@media (min-width: 768px) { section { padding: 4% 20% } }
 	
 /* Mobiles */
-@media (max-width: 767px) { body { padding: 12% 8% } }
+@media (max-width: 767px) { section { padding: 12% 8% } }
 
 section {
     padding: 5%;
+    background-image: linear-gradient(#FFF, #DDD);
+}
+
+.section-1 {
+    background-image: linear-gradient(#FFF, #DDD);
+}
+
+.section-2 {
+    background-image: linear-gradient(#DDD, #BBB);
+}
+
+.section-3 {
+    background-image: linear-gradient(#BBB, #999);
+}
+
+.section-4 {
+    background-image: linear-gradient(#999, #777);
+}
+
+.section-5 {
+    background-image: linear-gradient(#777, #FFF);
 }
 
 body { 
-    background-color: aquamarine 
+    background-color: #F3F3F3; 
 }
 
 h1 {
