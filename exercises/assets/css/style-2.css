@@ -18,6 +18,14 @@ input, button, textarea, select { font: inherit }
 /* Mobiles */
 @media (max-width: 767px) { body { padding: 12% 8% } }
 
+section {
+    padding: 5%;
+}
+
+body { 
+    background-color: aquamarine 
+}
+
 h1 {
     font-size: 84px;
     text-align: center;

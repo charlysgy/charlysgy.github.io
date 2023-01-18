@@ -18,22 +18,29 @@ input, button, textarea, select { font: inherit }
 /* Mobiles */
 @media (max-width: 767px) { body { padding: 12% 8% } }
 
+body { 
+    background-color: #F5F5F5;
+}
+
 h1 {
     font-size: 84px;
     text-align: center;
     font-weight: normal;
     letter-spacing: -2px;
     margin-bottom: 32px;
+    color: #AE7C33;
 }
 
 h2 {
     font-size: 36px;
     margin-bottom: 4px;
+    color: rgb(101,69,30);
 }
 
 h3 {
     font-size: 24px;
     margin-bottom: 4px;  
+    color: rgb(101,69,30);
 }
 
 p {
@@ -41,4 +48,5 @@ p {
     font-family: sans-serif;
     line-height: 1.6;
     margin-bottom: 20px;
+    color: darkblue;
 }
