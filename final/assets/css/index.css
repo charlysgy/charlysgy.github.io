@@ -1,0 +1,176 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none }
+*, *::before, *::after { box-sizing: border-box }
+html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
+scroll-behavior: smooth; scroll-padding-top: 20px }
+body {line-height: 1.5; margin-left: auto; margin-right: auto; 
+    min-height: 100vh; text-rendering: optimizeSpeed }
+h1, h2, h3, h4 { width: 100% }
+input, button, textarea, select { font: inherit }
+
+/* ================= ENDS ================ */
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    position: relative;
+    background-image: url(../img/bodybg.jpg);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    padding-bottom: 2px;
+    background-color: rgb(8, 196, 8);
+    position: fixed;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+#navimg {
+    margin: 3px;
+    width: 50px;
+    height: 38px;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    margin-top: 8px;
+}
+
+nav ul li {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: green;
+}
+
+.torolldown {
+    display: none;
+}
+
+nav ul li:hover .torolldown {
+    display: block;
+}
+
+#courses li {
+    margin-top: 5px;
+    width: 33%;
+    text-align: center;
+}
+
+#visits li{
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0; /*Push the element 100% from the right side*/
+    }
+
+    100% {
+        opacity: 1; /*Pull the element from left to right*/
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5% 1% 1% 1%;
+    margin-top: 0px;
+    min-height: 100vh;
+    background-color: rgba(200, 200, 200, 0.2);
+    animation: appear 1s;
+}
+
+header h1 {
+    margin-top: 8%;
+    margin-bottom: 4%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+@keyframes titleslider{
+    0% {
+        width: 0px;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+
+    100% {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}
+
+#headertitle {
+    margin-left: 35%;
+    margin-right: 35%;  
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    border-radius: 10px;
+    background-color: rgba(157, 157, 157, 0.95);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: titleslider 1s ease-in-out;
+}
+
+main {
+    background-color: rgba(200, 200, 200, .2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.maindiv {
+    border-radius: 10px;
+    margin: 2%;
+    color: #FFF;
+    text-align: center;
+    padding: 5px;
+}
+
+#aboutme {
+    background-color: rgba(255, 0, 0, .8);
+}
+
+#reasons {
+    background-color: rgba(119, 203, 255, 0.8);
+}
+
+footer {
+    min-height: 25vh;
+    background-color: slategrey;
+}
